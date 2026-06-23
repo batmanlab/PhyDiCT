@@ -46,7 +46,7 @@ Without any task-specific training or fine-tuning, PhyDiCT **outperforms fully t
 ## 🧩 Method at a Glance
 
 <p align="center">
-<img src="assets/phydict_overview.png" width="90%"/>
+<img src="assets/phydict_overview.pdf" width="90%"/>
 </p>
 
 PhyDiCT performs inference by alternating between:
@@ -74,9 +74,7 @@ Combining a strong generative prior with explicit imaging physics substantially 
 🚧 **Code will be released upon decision.**
 
 The full release will include:
-- Differentiable CT forward renderer
 - Plug-and-play diffusion sampling code
-- Evaluation scripts and configs
 - Reproducibility instructions
 
 ---
