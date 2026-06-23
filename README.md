@@ -46,7 +46,7 @@ Without any task-specific training or fine-tuning, PhyDiCT **outperforms fully t
 ## 🧩 Method at a Glance
 
 <p align="center">
-<img src="assets/phydict_overview.pdf" width="90%"/>
+<img src="assets/phydict_overview.png" width="90%"/>
 </p>
 
 PhyDiCT performs inference by alternating between:
