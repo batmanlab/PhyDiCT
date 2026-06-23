@@ -1,4 +1,3 @@
-# PhyDiCT
 # <div align="center">PhyDiCT: Plug-and-Play CT Reconstruction from Sparse X-Rays via Differentiable Rendering and Strong Priors</div>
 
 <p align="center">
