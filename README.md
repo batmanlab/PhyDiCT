@@ -61,7 +61,7 @@ This formulation allows flexible, stable reconstruction without retraining the p
 We evaluate PhyDiCT on **public 3D lung CT datasets** using:
 - Perceptual metrics (SSIM, PSNR)
 - Semantic and structural consistency metrics
-- Slice-wise and volumetric evaluations
+- Volumetric evaluations
 
 **Key finding:**  
 Combining a strong generative prior with explicit imaging physics substantially improves reconstruction quality compared to both plug-and-play diffusion baselines and fully trained models.
@@ -69,8 +69,6 @@ Combining a strong generative prior with explicit imaging physics substantially 
 ---
 
 ## 📦 Code Status
-
-🚧 **Code will be released upon decision.**
 
 The full release will include:
 - Plug-and-play diffusion sampling code
