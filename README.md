@@ -127,8 +127,9 @@ python eval_low_PhyDiCT.py \
 --save_path 'tmp/results_phydict_low_res'
 ```
 
-Please pay attention to the 3D spatial features and the 2D projections. If necessary please visualize after line 113 to make sure you don't need to transpose or flip. 
-The results will be stored in ```tmp/results_phydict_low_res/add_t_0.8``` if default values are used. 
+Please pay attention to the 3D spatial features and the 2D projections. 
+If necessary please visualize after [line 113](https://github.com/batmanlab/PhyDiCT/blob/8af688b6efc738b5340179bbb52b88fa93f570c9/src/eval_low_PhyDiCT.py#L113) to make sure you don't need to transpose or flip. 
+The results will be stored in `tmp/results_phydict_low_res/add_t_0.8` if default values are used. 
 
 ### 5. Run the super res branch (same to MedSyn)
 ```
