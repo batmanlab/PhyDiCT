@@ -20,8 +20,8 @@ def load_example_ct(
 ) -> Subject:
     """Load an example chest CT for demonstration purposes."""
     datadir = Path(__file__).resolve().parent / "data"
-    volume = 'THE OBJECTIVE CT VOLUME PATH IS RESTRICTED DUE TO DATA PRIVACY. PLEASE REPLACE IT WITH YOUR OWN CT VOLUME PATH.'
-    labelmap = 'THE OBJECTIVE LABELMAP PATH IS RESTRICTED DUE TO DATA PRIVACY. PLEASE REPLACE IT WITH YOUR OWN LABELMAP PATH.'
+    volume = datadir / "train_19742_a_1.nii.gz"
+    labelmap = datadir / "train_19742_a_1_lung.nii.gz"
     structures = pd.read_csv(datadir / "structures.csv")
     return read(
         volume,

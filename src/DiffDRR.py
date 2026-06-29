@@ -19,7 +19,6 @@ from utils import *
 
 import argparse
 from diffdrr.drr import DRR
-from diffdrr.pose import convert
 from diffdrr.data import load_example_ct
 
 class Reconstruction(torch.nn.Module):

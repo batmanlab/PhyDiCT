@@ -39,3 +39,22 @@ def cache_transformed_text(train_files):
         data=train_files, transform=train_transforms, cache_rate=0.0
     )
     return train_ds
+
+
+def get_transforms_normal(shape):
+    train_target_transforms = Compose(
+        [
+            LoadImaged(keys=["image", "text"], reader='NumpyReader', image_only=False),
+            ToTensord(keys=["image", "text"]),
+        ]
+    )
+
+    return train_target_transforms
+
+
+def cache_transformed_train_data(train_files, shape):
+    train_transforms = get_transforms_normal(shape)
+    train_ds = monai.data.CacheDataset(
+        data=train_files, transform=train_transforms, cache_rate=0.0
+    )
+    return train_ds

@@ -23,14 +23,10 @@ from DiffDRR import Reconstruction
 from train_low_res import GaussianDiffusion as GDLR
 from taming.losses import LPIPS
 
-from diffdrr.drr import DRR
 from diffdrr.pose import convert
-from diffdrr.data import load_example_ct
 
 SEED = 1
 random.seed(SEED)
-import matplotlib.pyplot as plt
-import pandas as pd
 
 # Seed NumPy
 np.random.seed(SEED)
@@ -286,14 +282,12 @@ class Trainer(object):
             # dirs = sorted(dirs, key=lambda x: int(x.split("_")[0]))
             path = dirs[-1]
 
-        # self.step = int(path.split("_")[0]) * self.save_and_sample_every + 1
         self.step = 1
         pth = os.path.join(self.results_folder, path)
         self.accelerator.load_state(pth, strict=False)
 
     def phydict(self, *args, **kwargs):
-        print("Custom training logic in AdvancedTrainer")
-
+        print("main Plug-and-Play PhyDiCT function for generating 3D volumes from text and X-ray images")
 
         for i, data in enumerate(self.dl):
 
@@ -329,7 +323,7 @@ class Trainer(object):
             
 
     def EC(self, *args, **kwargs):
-        print("Custom training logic in AdvancedTrainer")
+        print("Extra Computing (EC) for better visual results")
 
         os.makedirs(os.path.join(self.save_folder, f'add_t_{add_time}'), exist_ok=True)
         volume = [item.split('_sample_0.npy')[0] for item in os.listdir(self.save_folder) if item.endswith('.npy')]
@@ -413,7 +407,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--text_feature_folder', type=str, default='./text_feature')
     parser.add_argument('--pretrain_model_path', type=str, default='./model/results_text_low_res_improved_unet_seg')
-    parser.add_argument('--save_path', type=str, default='tmp/results_low_res')
+    parser.add_argument('--save_path', type=str, default='tmp/results_phydict_low_res')
     parser.add_argument('--noise_time', default=None)
     args = parser.parse_args()
     noise_time = args.noise_time
