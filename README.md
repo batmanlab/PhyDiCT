@@ -168,7 +168,7 @@ Also MedSyn:
 ```
 
 ## License and Copyright
-Please see [LICENSE.txt](https://github.com/batmanlab/PhyDiCT/LICENSE.txt)
+Please see [LICENSE.txt](https://github.com/batmanlab/PhyDiCT/blob/main/LICENSE.txt)
 
 ## Credits
 The code is heavily based on [MedSyn](https://github.com/batmanlab/MedSyn/tree/main) and [DiffDRR](https://github.com/eigenvivek/DiffDRR). 
