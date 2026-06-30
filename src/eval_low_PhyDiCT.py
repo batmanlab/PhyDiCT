@@ -402,6 +402,7 @@ def main(args):
     
     trainer.load(-1)
     trainer.phydict()
+    trainer.EC()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
