@@ -17,6 +17,11 @@ Kayhan Batmanghelich<sup>1</sup>
 <!-- <a href=""><img src="https://img.shields.io/badge/Paper-MICCAI%202026-blue"/></a> -->
 </p>
 
+
+<p align="center">
+<a href="assets/phydict_miccai2026.pdf">📄 Read the manuscript (MICCAI 2026)</a>
+</p>
+
 ---
 
 ## 🧠 Overview
