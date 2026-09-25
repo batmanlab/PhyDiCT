@@ -154,12 +154,28 @@ python eval_super_res.py \
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{dai2026phydict,
-  title     = {PhyDiCT: Plug-and-Play CT Reconstruction from Sparse X-Rays via Differentiable Rendering and Strong Priors},
-  author    = {Dai, Weicheng and Ghosh, Shantanu and Batmanghelich, Kayhan},
-  booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
-  year      = {2026}
+@InProceedings{dai2026phydict,
+author="Dai, Weicheng
+and Ghosh, Shantanu
+and Batmanghelich, Kayhan",
+editor="Yang, Guang
+and Adeli, Ehsan
+and de Bruijne, Marleen
+and Papie{\.{z}}, Bart{\l}omiej W.
+and Speidel, Stefanie
+and Tiwari, Pallavi
+and Zheng, Guoyan
+and Yaqub, Mohammad
+and Dou, Qi
+and Rekik, Islem",
+title="PhyDiCT: Plug-and-Play CT Reconstruction from Sparse X-Rays via Differentiable Rendering and Strong Priors",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026",
+year="2027",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="392--402",
 }
+
 ```
 
 Also MedSyn:
